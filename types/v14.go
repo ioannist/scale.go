@@ -47,6 +47,7 @@ func (m *MetadataV14Decoder) Process() {
 	_ = json.Unmarshal(bm, &modulesType)
 	result.CallIndex = make(map[string]CallIndex)
 	result.EventIndex = make(map[string]EventIndex)
+	result.Types = portable
 
 	var originCallers []OriginCaller
 	for k, module := range modulesType {
