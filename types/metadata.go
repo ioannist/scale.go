@@ -88,6 +88,7 @@ type MetadataStruct struct {
 	CallIndex       map[string]CallIndex  `json:"call_index"`
 	EventIndex      map[string]EventIndex `json:"event_index"`
 	Extrinsic       *ExtrinsicMetadata    `json:"extrinsic"`
+	Types		map[int]SiType	      `json:"types"`
 }
 
 type ExtrinsicMetadata struct {
